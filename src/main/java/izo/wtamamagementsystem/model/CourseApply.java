@@ -1,8 +1,4 @@
-package izo.wtamamagementsystem.entity;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+package izo.wtamamagementsystem.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
