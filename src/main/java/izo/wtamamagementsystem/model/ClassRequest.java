@@ -1,4 +1,4 @@
-package izo.wtamamagementsystem.entity;
+package izo.wtamamagementsystem.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
