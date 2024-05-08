@@ -15,41 +15,41 @@
     <form>
         <div class="form-group">
             <label for="lectureName">강의명:</label>
-            <input type="text" class="form-control" id="lectureName" placeholder="강의명 입력">
+            <input type="text" class="form-control" id="lectureName" value="두둥탁" readonly >
         </div>
         <div class="form-group">
-            <label for="professorName">교수명:</label>
-            <input type="text" class="form-control" id="professorName" placeholder="교수명 입력">
+            <label for="teaching">강의방식</label>
+            <select class="form-control" id="teaching">
+                <option value="online">온라인</option>
+                <option value="offline">오프라인</option>
+            </select>
         </div>
         <div class="form-group">
             <label for="lectureTime">강의 시간:</label>
             <input type="text" class="form-control" id="lectureTime" placeholder="강의 시간 입력">
         </div>
         <div class="form-group">
-            <label for="classroom">강의실:</label>
-            <input type="text" class="form-control" id="classroom" placeholder="강의실 입력">
+            <label for="book">교재 및 참고 자료:</label>
+            <input type="text" class="form-control" id="book" placeholder="교재 및 참고 자료 입력">
         </div>
         <div class="form-group">
-            <label for="lectureContent">강의 내용:</label>
-            <textarea class="form-control" id="lectureContent" rows="5" placeholder="강의 내용 입력"></textarea>
+            <label for="courseOverview">교과목 개요:</label>
+            <textarea class="form-control" id="courseOverview" rows="5" placeholder="강의 개요 입력"></textarea>
         </div>
         <div class="form-group">
             <label for="classObjective">수업 목표:</label>
             <textarea class="form-control" id="classObjective" rows="3" placeholder="수업 목표 입력"></textarea>
         </div>
         <div class="form-group">
-            <label for="referenceMaterials">교재 및 참고 자료:</label>
-            <textarea class="form-control" id="referenceMaterials" rows="3" placeholder="교재 및 참고 자료 입력"></textarea>
+            <label for="evaluation">평가 방법:</label>
+            <textarea class="form-control" id="evaluation" rows="3" placeholder="평가 방법 입력"></textarea>
         </div>
         <div class="form-group">
-            <label for="evaluationMethod">평가 방법:</label>
-            <textarea class="form-control" id="evaluationMethod" rows="3" placeholder="평가 방법 입력"></textarea>
+            <label for="remarks">비고</label>
+            <textarea class="form-control" id="remarks" rows="3" placeholder="기타 메모사항 입력"></textarea>
         </div>
-        <div class="form-group">
-            <label for="otherInformation">기타 사항:</label>
-            <textarea class="form-control" id="otherInformation" rows="3" placeholder="기타 사항 입력"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">제출</button>
+        <input type="hidden" id="idProf" value="#">
+        <button type="submit" class="btn btn-primary">저장</button>
     </form>
 </div>
 
