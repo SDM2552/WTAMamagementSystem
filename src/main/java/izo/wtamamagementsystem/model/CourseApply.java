@@ -11,7 +11,7 @@ import javax.persistence.Table;
 public class CourseApply {
     @Id
     @Column(name = "id_course_apply")
-    private String idCourseApply;
+    private int idCourseApply;
 
     @Column(name = "course_name")
     private String courseName;
