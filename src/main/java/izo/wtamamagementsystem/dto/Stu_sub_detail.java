@@ -8,5 +8,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Stu_sub_detail {
-    private String id_student;
+    private int id_student;
 }

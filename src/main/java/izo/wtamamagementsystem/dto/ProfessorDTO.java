@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ProfessorDTO {
-   private int idProf;
+   private int id_prof;
     //이름
     private String name;
     //생년월일
@@ -21,6 +21,6 @@ public class ProfessorDTO {
     //주소
     private String address;
     //회원번호
-    private int idUser;
+    private int id_user;
 
 }

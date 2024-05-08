@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Imt_cors_mstDTO {
-    private String idCors;
+    private int id_cors_mst;
     private String corsNm;
     private String entYr;
     private String selCd;
