@@ -10,4 +10,9 @@ public class MyController {
     public String root(){
         return "root";
     }
+
+    @GetMapping("/syllabus")
+    public String syllabus(){
+        return "syllabus/input";
+    }
 }
