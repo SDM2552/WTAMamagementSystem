@@ -7,12 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Getter
-@Setter
-@AllArgsConstructor
-@ToString
-@NoArgsConstructor
-@Builder
+@Data
 public class lmt_cors_mst_dto {
 
     private int id_cors; //교육과정번호
