@@ -18,7 +18,7 @@ import javax.persistence.Table;
 public class Lesson {
     @Id
     @Column(name = "id_lesson")
-    private String idLesson;
+    private int idLesson;
     //개설강의
 
     @Column(name = "course_name", nullable = false)
