@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class SubjectDTO {
-   private String id_subject;
+   private int id_subject;
    private String subject_name;
    private String subject_type;
     private String 	subject_code;
