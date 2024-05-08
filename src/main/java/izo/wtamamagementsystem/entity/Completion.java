@@ -6,15 +6,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class User {
+public class Completion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idUser;
-    private String name;
-    private String birth;
-    private String tel;
-    private String logId;
-    private String password;
-    private String email;
-    private String role;
+    private Long idCompletion;
+    private Long idStudent;
+    private String course;
+    private String score;
+    private String completetionDate;
+
+    // 생성자, 게터, 세터 등의 필요한 메서드를 추가하세요
 }
