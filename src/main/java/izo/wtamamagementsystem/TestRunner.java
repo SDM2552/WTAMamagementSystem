@@ -8,6 +8,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
+import java.sql.Connection;
 
 @Component
 @Slf4j
@@ -20,6 +21,11 @@ public class TestRunner implements ApplicationRunner{
 	
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
+
+		Connection connection = dataSource.getConnection();
+
+		jdbcTemplate.execute("INSERT INTO professor(name, birth, tel, gender, address, id_user)" +
+				"VALUES ('김교수', '950320', '010-1234-1234', 'F', '경기도 고양시 어쩌구', '1')");
 
 		//JdbcTemplete
 		//member

@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class Professor {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idProf;
     //이름
     private String name;
