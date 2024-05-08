@@ -3,7 +3,7 @@ package izo.wtamamagementsystem.model;
 import lombok.Data;
 
 @Data
-public class Lmt_cors_mst {
+public class Imt_cors_mst {
 
     private int id_cors; //교육과정번호
     private String cors_nm; //교육과정명
