@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class ClassRequest {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idClassRequest;
     //개설강좌정보
     private String classInfo;

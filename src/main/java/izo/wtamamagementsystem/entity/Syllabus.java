@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class Syllabus {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idSyllabus;
     //교과목 개요
     private String course_overview;
