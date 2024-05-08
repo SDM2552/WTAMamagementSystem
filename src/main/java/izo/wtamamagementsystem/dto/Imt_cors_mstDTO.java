@@ -1,8 +1,15 @@
 package izo.wtamamagementsystem.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 //교육과정정보
-public class Lmt_cors_mstDTO {
-    private int idCors;
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Imt_cors_mstDTO {
+    private String idCors;
     private String corsNm;
     private String entYr;
     private String selCd;
