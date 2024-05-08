@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class CreditDTO {
 
-    private String id_credit;
+    private int id_credit;
     private String credit;
     private String credit_now;
     private String credit_total;

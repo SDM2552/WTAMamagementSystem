@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Course_applyDTO {
-    private String idCourseApply;
+    private int id_Course_Apply;
     private String courseName;
     private String couseApplyDate;
     private String couseApplyStatus;

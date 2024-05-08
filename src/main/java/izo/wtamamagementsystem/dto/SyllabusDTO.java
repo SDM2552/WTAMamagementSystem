@@ -8,8 +8,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class SyllabusDTO {
-    private String idSyllabus;
-    private String courseOverview;
+    private int id_syllabus;
+    private String course_overview;
     private String book;
 
 }

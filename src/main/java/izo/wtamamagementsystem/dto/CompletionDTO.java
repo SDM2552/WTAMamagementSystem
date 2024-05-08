@@ -11,7 +11,7 @@ import java.util.Date;
 @AllArgsConstructor
 public class CompletionDTO {
 
-    private String id_completion;
+    private int id_completion;
     private String id_student;
     private String course;
     private String score;

@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class LessonDTO {
-    private String idLesson;
+    private int id_lesson;
     private String courseName;
     private int credit;
 }

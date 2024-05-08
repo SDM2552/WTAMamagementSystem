@@ -9,5 +9,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Class_requestDTO {
 
-   private String id_class_request;
+   private int id_class_request;
 }
