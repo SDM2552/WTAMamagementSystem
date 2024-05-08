@@ -13,10 +13,12 @@ public class Syllabus {
     private int idSyllabus;
     //교과목 개요
     private String course_overview;
-    //교재
-    private String book;
     //강의 방식
     private String teaching;
+    //교재
+    private String book;
+    //수업목표
+    private String objective;
     //평가 방식
     private String evaluation;
     //비고
