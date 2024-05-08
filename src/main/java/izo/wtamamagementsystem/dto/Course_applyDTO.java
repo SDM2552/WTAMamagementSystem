@@ -14,4 +14,5 @@ public class Course_applyDTO {
     private String couseApplyStatus;
     private String idLesson;
     private String idStudent;
+    private String idDetail;
 }
