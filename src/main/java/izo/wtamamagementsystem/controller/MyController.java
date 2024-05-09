@@ -15,4 +15,9 @@ public class MyController {
     public String syllabus(){
         return "syllabus/input";
     }
+
+    @GetMapping("/classList")
+    public String classList(){
+        return "class/classList";
+    }
 }
