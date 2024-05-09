@@ -8,17 +8,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>프로그램 추가</title>
+    <title>과정추가</title>
 </head>
 <body>
 <form>
     <div class="form-group">
-        <label for="idProgram">교육분류명</label>
-        <input type="text" class="form-control" id="idProgram" placeholder="교육분류명 입력">
+        <label for="lessonName">교육명</label>
+        <input type="text" class="form-control" id="lessonName" placeholder="교육명 입력">
     </div>
     <div class="form-group">
-        <label for="programName">교육과정내용</label>
-        <input type="text" class="form-control" id="programName" placeholder="교육과정내용 입력">
+        <label for="lessonMember">수강정원</label>
+        <input type="text" class="form-control" id="lessonMember" placeholder="수강정원">
+    </div>
+    <div class="form-group">
+        <label for="idProf">교수id</label>
+        <input type="text" class="form-control" id="idProf" placeholder="교수id">
+    </div>
+    <div class="form-group">
+        <label for="lecFee">강의료</label>
+        <input type="text" class="form-control" id="lecFee" placeholder="강의료">
     </div>
     <button type="submit" class="btn btn-primary">제출</button>
 </form>
