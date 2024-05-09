@@ -13,12 +13,12 @@
 <body>
 <form>
     <div class="form-group">
-        <label for="idProgram">교육분류명</label>
-        <input type="text" class="form-control" id="idProgram" placeholder="교육분류명 입력">
+        <label for="programName">교육분류명</label>
+        <input type="text" class="form-control" id="programName" placeholder="교육분류명 입력">
     </div>
     <div class="form-group">
-        <label for="programName">교육과정내용</label>
-        <input type="text" class="form-control" id="programName" placeholder="교육과정내용 입력">
+        <label for="progDesc">교육과정내용</label>
+        <input type="text" class="form-control" id="progDesc" placeholder="교육과정내용 입력">
     </div>
     <button type="submit" class="btn btn-primary">제출</button>
 </form>
