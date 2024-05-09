@@ -10,13 +10,17 @@
 <body>
 <h1>메인 페이지 입니다.</h1>
 <<<<<<< HEAD
-<h1>jiung test123</h1>
+
 
 =======
-<h1>jiung test</h1>
+<br>
 <a href="/syllabus">강의계획서 입력</a>
->>>>>>> bomi
+>>>>>>> bomi<br>
 
+
+<a href="/progInput">프로그램 추가</a>
+<a href="/progMidInput">교육과정 추가</a>
+>>>>>jiung<br>
 
 </body>
 </html>
