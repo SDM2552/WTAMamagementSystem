@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="izo.wtamamagementsystem.repository.ProgramRepository">
-<insert id="insert">
-    insert into program (idProgram,programName,progDesc) values (#{idProgram},#{programName},#{progDesc})
-</insert>
+    <insert id="insert">
+        insert into program (idProgram, programName, progDesc)
+        values (#{idProgram}, #{programName}, #{progDesc})
+    </insert>
+    <update id="update">
+        update program
+        set programName = #{programName},
+            progDesc = #{progDesc}
+        where idProgram = #{idProgram}
+    </update>
+
+    <delete id="delete">
+        delete from program
+        where idProgram = #{idProgram}
+    </delete>
 </mapper>

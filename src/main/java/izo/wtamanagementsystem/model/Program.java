@@ -1,4 +1,4 @@
-package izo.wtamamagementsystem.model;
+package izo.wtamanagementsystem.model;
 
 import lombok.Data;
 
