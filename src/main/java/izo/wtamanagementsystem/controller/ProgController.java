@@ -1,4 +1,4 @@
-package izo.wtamamagementsystem.controller;
+package izo.wtamanagementsystem.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
