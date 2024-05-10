@@ -8,4 +8,7 @@ import org.apache.ibatis.annotations.Mapper;
 public interface ProgramRepository {
 
     public void insert(Program program);
+    public void update(Program program);
+    public void delete(Program program);
+
 }
