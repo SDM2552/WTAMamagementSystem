@@ -11,16 +11,16 @@
     <title>프로그램 추가</title>
 </head>
 <body>
-<form>
+<form id="progInputForm" method="post" action="/progInsert">
     <div class="form-group">
-        <label for="idProgram">교육분류명</label>
-        <input type="text" class="form-control" id="idProgram" placeholder="교육분류명 입력">
+        <label for="programName">교육분류명</label>
+        <input type="text" class="form-control" id="programName" placeholder="교육분류명 입력" name="programName">
     </div>
     <div class="form-group">
-        <label for="programName">교육과정내용</label>
-        <input type="text" class="form-control" id="programName" placeholder="교육과정내용 입력">
+        <label for="progDesc">교육과정내용</label>
+        <input type="text" class="form-control" id="progDesc" placeholder="교육과정내용 입력" name="progDesc">
     </div>
-    <button type="submit" class="btn btn-primary">제출</button>
+    <button type="submit" class="btn btn-primary" >제출</button>
 </form>
 
 
