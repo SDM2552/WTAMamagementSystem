@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="izo.wtamamagementsystem.repository.ProgramRepository">
-    <insert id="insert">
-        insert into program (idProgram, programName, progDesc)
-        values (#{idProgram}, #{programName}, #{progDesc})
+<mapper namespace="izo.wtamanagementsystem.repository.ProgramRepository">
+    <select id="selectBoard">
+        select * from program
+    </select>
+
+    <insert id="insert" parameterType="izo.wtamanagementsystem.model.Program">
+        insert into program (id_program,program_name,prog_desc)
+        values (#{idProgram},#{programName}, #{progDesc})
+
     </insert>
     <update id="update">
         update program

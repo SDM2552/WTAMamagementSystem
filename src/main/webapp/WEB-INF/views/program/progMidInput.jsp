@@ -11,22 +11,22 @@
     <title>과정추가</title>
 </head>
 <body>
-<form>
+<form action="progMidInputInsert" method="post">
     <div class="form-group">
         <label for="lessonName">교육명</label>
-        <input type="text" class="form-control" id="lessonName" placeholder="교육명 입력">
+        <input type="text" class="form-control" id="lessonName" placeholder="교육명 입력" name="lessonName">
     </div>
     <div class="form-group">
         <label for="lessonMember">수강정원</label>
-        <input type="text" class="form-control" id="lessonMember" placeholder="수강정원">
+        <input type="text" class="form-control" id="lessonMember" placeholder="수강정원" name="lessonMember">
     </div>
     <div class="form-group">
         <label for="idProf">교수id</label>
-        <input type="text" class="form-control" id="idProf" placeholder="교수id">
+        <input type="text" class="form-control" id="idProf" placeholder="교수id" name="idProf">
     </div>
     <div class="form-group">
         <label for="lecFee">강의료</label>
-        <input type="text" class="form-control" id="lecFee" placeholder="강의료">
+        <input type="text" class="form-control" id="lecFee" placeholder="강의료" name="lecFee">
     </div>
     <button type="submit" class="btn btn-primary">제출</button>
 </form>
