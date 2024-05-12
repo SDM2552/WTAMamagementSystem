@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="izo.wtamanagementsystem.repository.ProgramMidRepository">
+    <insert id="insert" parameterType="izo.wtamanagementsystem.model.ProgramMid">
+        insert into program_mid (id_detail,id_prof,id_program,lec_fee,lesson_member,lesson_name)
+        values (#{idDetail},#{idProf}, #{idProgram},#{lecFee},#{lessonMember},#{lessonName})
+
+    </insert>
+    <update id="update">
+        update program_mid
+        set programName = #{programName},
+            progDesc = #{progDesc}
+        where idProgram = #{idProgram}
+    </update>
+
+    <delete id="delete">
+        delete from program
+        where idProgram = #{idProgram}
+    </delete>
+</mapper>

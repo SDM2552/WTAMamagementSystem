@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Withdraw Course</title>
+</head>
+<body>
+<h2>Withdraw from a Course</h2>
+<form th:action="@{/withdraw}" method="post">
+    Enrollment ID: <input type="text" name="enrollmentId" required><br>
+    <input type="submit" value="Withdraw">
+</form>
+<div th:if="${message}">
+    <p th:text="${message}"></p>
+</div>
+</body>
+</html>
