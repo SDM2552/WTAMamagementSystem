@@ -1,16 +1,26 @@
 package izo.wtamanagementsystem.model;
 
 public class User {
-    private Long id;  // ID 타입을 Long으로 변경
-    private String loginId;
-    private String password;
-    private String role;  // 역할 (예: STUDENT, PROFESSOR 등)
-    private String registDate;  // 등록 날짜
+    private Long id;  // 유저의 고유 식별자
+    private String loginId;  // 유저의 로그인 ID
+    private String password;  // 유저의 비밀번호
+    private String role;  // 유저의 역할 (예: STUDENT, PROFESSOR 등)
+    private String registDate;  // 유저가 등록된 날짜
 
-    // Constructors, Getters, and Setters
+    // 기본 생성자
     public User() {}
 
-    public User getId() {
+    // 모든 필드를 포함하는 생성자
+    public User(Long id, String loginId, String password, String role, String registDate) {
+        this.id = id;
+        this.loginId = loginId;
+        this.password = password;
+        this.role = role;
+        this.registDate = registDate;
+    }
+
+    // 각 필드에 대한 getter 및 setter 메서드
+    public Long getId() {
         return id;
     }
 

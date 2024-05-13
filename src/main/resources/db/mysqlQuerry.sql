@@ -86,7 +86,7 @@ CREATE TABLE `program` (
                            `program_target` TEXT NOT NULL,
                            `id_room` VARCHAR(20) NOT NULL,
                            `program_method` TEXT NOT NULL COMMENT '이론,실기',
-                           `program_per` TEXT NOT NULL,
+                           `program_duration` TEXT NOT NULL,
                            `program_expense` VARCHAR(20) NOT NULL,
                            PRIMARY KEY (`id_program`)
 );
