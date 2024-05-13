@@ -1,5 +1,4 @@
 package izo.wtamanagementsystem.model;
-
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
@@ -9,7 +8,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class User {
     private Long id;  // 유저의 고유 식별자
-    private String loginId;  // 유저의 로그인 ID
+    private String email;  // 유저의 이메일 (로그인 ID 대신 사용)
     private String password;  // 유저의 비밀번호
     private String role;  // 유저의 역할 (예: STUDENT, PROFESSOR 등)
     private String registDate;  // 유저가 등록된 날짜
