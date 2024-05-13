@@ -19,8 +19,8 @@ public class CourseService {
         courseMapper.enrollCourse(enrollment);
     }
 
-    public void withdrawCourse(Long enrollmentId) {
-        courseMapper.withdrawCourse(enrollmentId);
+    public void withdrawCourse(Long idEnrollment) {
+        courseMapper.withdrawCourse(idEnrollment);
     }
 
     public boolean canEnroll(Long userId) {
