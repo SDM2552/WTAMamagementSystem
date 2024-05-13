@@ -15,22 +15,10 @@ public class CourseController {
     @Autowired
     private CourseService courseService;
 
-//    @GetMapping("/enroll")
-//    public String showEnrollmentForm(HttpSession session, Model model) {
-//        User user = (User) session.getAttribute("user");
-//        if (user != null && user.getRole().equals("STUDENT")) {
-//            return "enroll"; // JSP 또는 Thymeleaf 템플릿 이름
-//        } else {
-//            model.addAttribute("message", "Only students can enroll in courses.");
-//            return "redirect:/login"; // 로그인 페이지로 리다이렉션
-//        }
-//    }
-// 컨트롤러 계층 예시
-
     @GetMapping("/enroll")
     public String showEnrollmentForm(HttpSession session, Model model) {
         User user = (User) session.getAttribute("user");
-        if (user != null && courseService.canEnroll(user.getId())) {
+        if (user != null && courseService.canEnroll(user.getId())) {  // 괄호 추가
             return "enroll"; // JSP 또는 Thymeleaf 템플릿 이름
         } else {
             model.addAttribute("message", "Only students can enroll in courses.");
