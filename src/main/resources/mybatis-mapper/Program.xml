@@ -7,8 +7,18 @@
     </select>
 
     <insert id="insert" parameterType="izo.wtamanagementsystem.model.Program">
-        insert into program (id_program,program_name,prog_desc)
-        values (#{idProgram},#{programName}, #{progDesc})
+        insert into program (pgm_id,
+                             cate_id,
+                             pgm_name,
+                             st_dt,
+                             end_dt,
+                             pgm_target,
+                             room_id,
+                             pgm_method,
+                             pgm_per,
+                             pgm_fee
+                    values (#{pgmId},#{cateId},#{pgmName},#{stDt},#{endDt},
+                                 #{pgmTarget},#{roomId},#{pgmMethod},#{pgmPer},#{pgmFee})
 
     </insert>
     <update id="update">

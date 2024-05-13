@@ -23,13 +23,13 @@ public class ProgramService {
         return insertProgram;
     }
 
-    public int updateProgram(int programId) {
-        int updateProgram = programRepository.update(programId);
+    public int updateProgram(int pgmId) {
+        int updateProgram = programRepository.update(pgmId);
         return updateProgram;
     }
 
-    public int deleteProgram(int programId) {
-        int deleteProgram = programRepository.delete(programId);
+    public int deleteProgram(int pgmId) {
+        int deleteProgram = programRepository.delete(pgmId);
         return deleteProgram;
     }
 

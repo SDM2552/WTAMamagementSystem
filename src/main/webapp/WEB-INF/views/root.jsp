@@ -9,18 +9,18 @@
 </head>
 <body>
 <h1>메인 페이지 입니다.</h1>
-<<<<<<< HEAD
 
 
-=======
+
+
 <br>
 <a href="/syllabus">강의계획서 입력</a>
->>>>>>> bomi<br>
 
 
+<a href="/categoryInput">교육과정 카테고리 추가</a>
 <a href="/progInput">프로그램 추가</a>
-<a href="/progMidInput">교육과정 추가</a>
->>>>>jiung<br>
+
+
 
 </body>
 </html>
