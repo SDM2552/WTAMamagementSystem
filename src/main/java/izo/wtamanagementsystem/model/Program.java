@@ -1,20 +1,24 @@
 package izo.wtamanagementsystem.model;
 
+import lombok.Data;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Data
 public class Program {
-    private Long idProgram; // 프로그램 ID
-    private String idCategory; // 카테고리 ID
-    private String programName; // 프로그램 이름
-    private String startProgram; // 프로그램 시작 날짜
-    private String endProgram; // 프로그램 종료 날짜
-    private String programTarget; // 프로그램 대상
-    private Long idRoom; // 강의실 ID
-    private String programMethod; // 프로그램 방법 (예: 이론, 실습)
-    private String programDuration; // 프로그램 기간
-    private String programExpense; // 프로그램 비용
 
-    // 기본 생성자
-    public Program() {}
+    private int pgmId; //프로그램코드
+    private int cateId;    //주제분류코드
+    private String pgmName;    //프로그램명
+    private String stDt;    //교육시작일자
+    private String endDt;  //교육종료일자
+    private String pgmTarget;  //교육대상
+    private int roomId;        //강의실코드
+    private String pgmMethod;  //교육방법
+    private String pgmPer;     //교육인원
+    private String pgmFee;     //교육비
 
-    // Getter and Setter
-    // (Lombok @Data 어노테이션을 사용하여 자동으로 생성할 수도 있습니다.)
+
 }
