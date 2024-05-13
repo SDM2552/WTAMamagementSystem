@@ -8,6 +8,7 @@
     <title>메인 페이지</title>
 </head>
 <body>
+
 <div th:replace="header :: header"></div>
 <div>
     <a th:href="@{/login}">Login</a> |
