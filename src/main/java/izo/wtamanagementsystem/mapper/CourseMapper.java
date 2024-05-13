@@ -4,9 +4,9 @@ import izo.wtamanagementsystem.model.CourseEnrollment;
 import org.apache.ibatis.annotations.*;
 
 public interface CourseMapper {
-    @Insert("INSERT INTO course_enrollment (student_id, program_id, enrollment_date) VALUES (#{studentId}, #{programId}, #{enrollmentDate})")
+    @Insert("INSERT INTO course_enrollment (id_student, id_program, enrollment_date) VALUES (#{idStudent}, #{idProgram}, #{enrollmentDate})")
     void enrollCourse(CourseEnrollment enrollment);
 
-    @Update("UPDATE course_enrollment SET status = 'withdrawn_pending' WHERE enrollment_id = #{enrollmentId}")
-    void withdrawCourse(Long enrollmentId);  // int를 Long으로 변경
+    @Update("UPDATE course_enrollment SET status = 'withdrawn_pending' WHERE id_enrollment = #{idEnrollment}")
+    void withdrawCourse(Long idEnrollment);  // int를 Long으로 변경
 }

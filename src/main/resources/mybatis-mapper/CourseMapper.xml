@@ -1,15 +1,15 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.demo.mapper.CourseMapper">
 
-    <!-- 수강 신청 (조인테이블이라 헷갈릴 수 있어서, 받아온 id_student를 student_id로 치환, -->
+    <!-- 수강 신청 -->
     <insert id="enrollCourse" parameterType="izo.wtamanagementsystem.model.CourseEnrollment">
-        INSERT INTO course_enrollment (student_id, program_id, enrollment_date)
-        VALUES (#{studentId}, #{programId}, #{enrollmentDate})
+        INSERT INTO course_enrollment (id_student, id_program, enrollment_date)
+        VALUES (#{idStudent}, #{idProgram}, #{enrollmentDate})
     </insert>
 
     <!-- 수강 철회 -->
     <update id="withdrawCourse" parameterType="int">
-        UPDATE course_enrollment SET status = 'withdrawn_pending' WHERE enrollment_id = #{enrollmentId}
+        UPDATE course_enrollment SET status = 'withdrawn_pending' WHERE id_enrollment = #{idEnrollment}
     </update>
 
 
@@ -17,6 +17,6 @@
     <select id="checkRoleForEnrollment" resultType="boolean">
         SELECT CASE WHEN role = 'STUDENT' THEN true ELSE false END
         FROM users
-        WHERE id = #{userId}
+        WHERE id = #{idUser}
     </select>
 </mapper>
