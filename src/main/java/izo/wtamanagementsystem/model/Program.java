@@ -1,6 +1,6 @@
 package izo.wtamanagementsystem.model;
 
-<<<<<<< HEAD
+
 public class Program {
     private Long idProgram;           // 프로그램 ID
     private String idCategory;        // 카테고리 ID
@@ -97,13 +97,3 @@ public class Program {
         this.programExpense = programExpense;
     }
 }
-=======
-import lombok.Data;
-
-@Data
-public class Program {
-    private int idProgram; //교육과정코드
-    private String programName; //교육분류명
-    private String progDesc;    //교육과정내용
-}
->>>>>>> master

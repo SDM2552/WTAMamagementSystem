@@ -1,9 +1,5 @@
 package izo.wtamanagementsystem.service;
 
-import izo.wtamanagementsystem.model.Program;
-import izo.wtamanagementsystem.model.ProgramMid;
-import izo.wtamanagementsystem.repository.ProgramMidRepository;
-import izo.wtamanagementsystem.repository.ProgramRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
