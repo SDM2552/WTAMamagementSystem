@@ -8,11 +8,7 @@
     <title>메인 페이지</title>
 </head>
 <body>
-<div th:replace="header :: header"></div>
-<div>
-    <a th:href="@{/login}">Login</a> |
-    <a th:href="@{/register}">Register</a>
-</div>
+
 
 <h1>메인 페이지 입니다.</h1>
 
@@ -25,7 +21,7 @@
 <a href="/progMidInput">교육과정 추가</a>
 <br>
 
-<div th:replace="footer :: footer"></div>
+
 
 </body>
 </html>
