@@ -27,6 +27,10 @@
 <a href="/progInput">프로그램 추가</a>
 <a href="/progMidInput">교육과정 추가</a>
 >>>>>jiung<br>
+<<<<<<< HEAD
 <div th:replace="footer :: footer"></div>
+=======
+
+>>>>>>> master
 </body>
 </html>
