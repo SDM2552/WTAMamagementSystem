@@ -15,22 +15,17 @@
 </div>
 
 <h1>메인 페이지 입니다.</h1>
-<<<<<<< HEAD
 
-
-=======
 <br>
 <a href="/syllabus">강의계획서 입력</a>
->>>>>>> bomi<br>
+<br>
 
 
 <a href="/progInput">프로그램 추가</a>
 <a href="/progMidInput">교육과정 추가</a>
->>>>>jiung<br>
-<<<<<<< HEAD
-<div th:replace="footer :: footer"></div>
-=======
+<br>
 
->>>>>>> master
+<div th:replace="footer :: footer"></div>
+
 </body>
 </html>
