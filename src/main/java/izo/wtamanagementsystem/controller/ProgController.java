@@ -2,7 +2,7 @@ package izo.wtamanagementsystem.controller;
 
 
 
-import izo.wtamanagementsystem.model.ClassRomm;
+import izo.wtamanagementsystem.model.Category;
 import izo.wtamanagementsystem.model.Program;
 import izo.wtamanagementsystem.service.CategoryService;
 import izo.wtamanagementsystem.service.ProgramService;
@@ -28,7 +28,7 @@ public class ProgController {
     }
 
     @PostMapping("/categoryInsert")
-    public String categoryInsert(@ModelAttribute ClassRomm category) {
+    public String categoryInsert(Category category) {
         categoryService.insertCategory(category);
         return "redirect:/categoryInput";
     }

@@ -3,7 +3,7 @@ package izo.wtamanagementsystem.model;
 import lombok.Data;
 
 @Data
-public class ClassRomm {
+public class Category {
 
 
     private int cateId;    //주제분류코드

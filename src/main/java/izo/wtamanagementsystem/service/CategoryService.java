@@ -1,6 +1,8 @@
 package izo.wtamanagementsystem.service;
 
-import izo.wtamanagementsystem.model.ClassRomm;
+
+import izo.wtamanagementsystem.model.Category;
+import izo.wtamanagementsystem.model.ClassRoom;
 import izo.wtamanagementsystem.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,12 +15,12 @@ public class CategoryService {
     @Autowired
     private CategoryRepository categoryRepository;
 
-    public List<ClassRomm> getAllPrograms() {
-        List<ClassRomm> category = new ArrayList<>();
+    public List<ClassRoom> getAllPrograms() {
+        List<ClassRoom> category = new ArrayList<>();
         return category;
     }
 
-    public int insertCategory(ClassRomm category) {
+    public int insertCategory(Category category) {
         int insertCategory = categoryRepository.insert(category);
         return insertCategory;
     }
